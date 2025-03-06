@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cumculator</title>
+        <link rel="stylesheet" href="style.css" class="style">
+        <script defer src="calc.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div>
+                <input id="first_num" type="number">
+
+                <select id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="∗">∗</option>
+                    <option value="/">/</option>
+                    <option value="%">%</option>
+                    <option value="^">^</option>
+                </select>
+            
+                <input id="second_num" type="number">
+            </div>
+            <div>
+                <button id="learnAnswer">=</button>
+            </div>
+
+            <div class="conteinerAnswer">
+                <p class="preAns text"></p>
+                <p class="currentAns text"></p>
+            </div>
+
+            <div class="setting">
+                <ul>
+                    <li>
+                        <p class="text">Изменить фон веб-приложения
+                            <input id="settingBackgroundColor" type="color">
+                        </p>
+                    </li>
+                    
+                    <li>
+                        <p class="text">Изменить цвет шрифта
+                            <input id="settingFrontColor" type="color">
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+
+</html>

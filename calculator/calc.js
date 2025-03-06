@@ -65,11 +65,17 @@ function OnClickHandler()
 
     let answer = Calculator(firstNum, secondNum, operator);
     if(answer === false){ return;}
-    let ans = `<p>${firstNum}${operator}${secondNum} = ${answer}</p>`;
+    let ans = `<p>${firstNum} ${operator} ${secondNum} = ${answer}</p>`;
     SetInfo(ans);
 }
 
 function SetInfo(answer){
     let ans = document.querySelector(".currentAns");
+    if(ans === null){
+        ans.innerHTML = answer;
+        return;
+    }
+    let pre = document.querySelector(".preAns");
+    pre.innerHTML = ans.getHTML();
     ans.innerHTML = answer;
 }

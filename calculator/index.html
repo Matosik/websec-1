@@ -1,50 +1,51 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Cumculator</title>
         <link rel="stylesheet" href="style.css" class="style">
         <script defer src="calc.js"></script>
     </head>
     <body>
         <div class="main">
-            <div>
-                <input id="first_num" type="number">
+            <div class="conteinerExample">
+                <input class="elements" id="first_num" type="number">
 
-                <select id="operator">
+                <select class="elements" id="operator">
                     <option value="+">+</option>
                     <option value="-">-</option>
-                    <option value="∗">∗</option>
+                    <option value="*">*</option>
                     <option value="/">/</option>
                     <option value="%">%</option>
                     <option value="^">^</option>
                 </select>
             
-                <input id="second_num" type="number">
+                <input class="elements" id="second_num" type="number">
             </div>
-            <div>
-                <button id="learnAnswer">=</button>
-            </div>
-
-            <div class="conteinerAnswer">
-                <p class="preAns text"></p>
-                <p class="currentAns text"></p>
+            <div class="conteinerButton">
+                <button class="elements button" id="learnAnswer">подсчитать</button>
             </div>
 
-            <div class="setting">
-                <ul>
-                    <li>
-                        <p class="text">Изменить фон веб-приложения
-                            <input id="settingBackgroundColor" type="color">
-                        </p>
-                    </li>
-                    
-                    <li>
-                        <p class="text">Изменить цвет шрифта
-                            <input id="settingFrontColor" type="color">
-                        </p>
-                    </li>
-                </ul>
+            <div class="conteinerAnswer elements">
+                <p class="preAns"></p>
+                <p class="currentAns"></p>
             </div>
+
+        </div>
+        <div class="setting">
+            <ul>
+                <li>
+                    <p class="text">Изменить фон веб-приложения
+                        <input id="settingBackgroundColor" type="color">
+                    </p>
+                </li>
+                
+                <li>
+                    <p class="text">Изменить цвет шрифта
+                        <input id="settingFrontColor" type="color">
+                    </p>
+                </li>
+            </ul>
         </div>
     </body>
 

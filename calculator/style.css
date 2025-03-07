@@ -1,7 +1,58 @@
 .main {
     background-color: #baffc2;
+    padding: 15px;
+    margin: 10px;
+    width: 90%;
     border-radius: 30px;
+    box-sizing: border-box;
 }
 .text {
     color: black;
+    font-weight: bold;
+}
+
+.preAns{
+    text-align: left;
+    opacity: 0.5;
+}
+.currentAns{
+    text-align: left;
+}
+
+.elements{
+    text-align: left;
+    font: bold 25px Arial, sans-serif;
+    margin: 10px;
+    padding: 1%;
+    background:  transparent;
+    color: #fc0c09;
+    border: 2px dashed #fc0c09;
+    border-radius: 20px;
+    outline: none;
+}
+
+.elements:focus{
+    background-color: transparent;
+    border: 2px dashed #fc0c09;
+    border-radius: 20px;
+}
+
+
+.conteinerButton{
+    text-align: center;
+}
+.button{
+    cursor: crosshair;
+}
+.button:hover{
+    opacity: 0.5;
+}
+
+.conteinerExample{
+    text-align: center;
+}
+.conteinerAnswer{
+    text-align: center;
+    padding: 10px; /* Уменьшил отступы */
+    margin: 10px auto;
 }

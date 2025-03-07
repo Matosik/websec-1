@@ -18,9 +18,10 @@ function SetBackColor(){
 function SetTextColor(){
     const selectColor = document.getElementById("settingFrontColor");
 
-    const textColor = document.querySelectorAll(".text");
+    const textColor = document.querySelectorAll(".elements");
     textColor.forEach(element => {
        element.style.color = selectColor.value; 
+       element.style.borderColor = selectColor.value;
     });
 }
 function isStrictNumber(value) {

@@ -1,7 +1,7 @@
 .main {
     background-color: #baffc2;
     padding: 15px;
-    margin: 10px;
+    margin: 0 auto;
     width: 90%;
     border-radius: 30px;
     box-sizing: border-box;
@@ -55,4 +55,21 @@
     text-align: center;
     padding: 10px; /* Уменьшил отступы */
     margin: 10px auto;
+}
+
+@media (max-width: 600px) {
+    .elements {
+        font-size: 18px; /* Уменьшаем размер шрифта */
+    }
+    .button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .conteinerExample, .conteinerAnswer {
+        margin: 10px;
+    }
+    .main {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
